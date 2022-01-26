@@ -1,0 +1,373 @@
+    {% load static %}
+   
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esenyalı Muzik Evi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Pushster&family=Roboto&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&family=Twinkle+Star&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="{% static 'OwlCarousel/dist/assets/owl.theme.default.min.css'%}">
+    
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css2/owl.css'%}">
+    <link rel="stylesheet" href="{% static 'OwlCarousel/dist/assets/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body >
+ 
+    <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#">Murat Deniz </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center align-content-center" id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link active button-30" aria-current="page" href="{% url 'index' %}">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link button-30" href="{% url 'about' %}">Hakkımızda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link button-30" href="{% url 'urunler' %}">Mağaza</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link button-30" href="{% url 'blog' %}">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link button-30"  href="{% url 'contact' %}">İletişim</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="carousel__slide">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'img/guitar-gc2e1cf5fa_1920.jpg'%}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/violins-g52868effb_1920.jpg'%}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/musician-gc7bff24b1_1920.jpg'%}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+      <section class="hakkımızda" id="hakkımızda">
+        <div class="hakkımızda_ıcerik">
+          <h1 style="text-align: center;">Hakkımızda</h1>
+          <p >Muratdenizsazevi.com faaliyetlerine ilk olarak Murat Deniz önderliğinde  1.05.2014 yılında Pendik / Fatih te Esenyalı Müzik Merkezi olarak başladı .
+            Öncelikli hedefi siz müzik severlere kaliteli ve müşteri odaklı müzikal çözümler sunmak olan işletmemiz , faaliyetlerine enstrüman satış , imalat , tamir , tedarik , sipariş ve eğitim olarak devam etmektedir. <br><br>
+            
+            
+            Sektörde , ticari faaliyetlerden önce samimiyet ve güvenin ön planda olduğu, 
+            Bağlamanın sadece "ticari kâr" kaygıları ile siz değerli müzik severlere sunmanın doğru olmayacağı bilincindeyiz.Bu yüzden bizden temin ettiğiniz her enstrümanın,  bize katacağı uzun vadeli dostluk ve bağlılığın öneminin farkındayız. <a href="{% url 'about' %}">devamını oku</a> <br>
+            
+          </p>
+        </div>
+        <div class="resim_kapsayıcı">
+          <div class="card hakkımızda_resim" style="width: 90%;">
+            <img src="{% static 'img/esenyalımuzik.jpg'%}" class="card-img-top" alt="...">
+           
+          </div>
+      </div>
+      </section>
+      <section>
+        <h1 class="encoksatan_text">Esenyalı Muzik Merkezi</h1>
+         <div class=" div__button">
+           
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Muzik Dersleri</button>
+         
+          
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Esenyalı Muzik Merkezi</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>Müzik, insanın doğasını düzenleyerek onu evrenle uyumlu bir hale getiren, yarattığı etkiyle tüm toplumları etkisi altına alan, bireylerin özgürleşmesini sağlayan temel sanat dalıdır.</p>
+              <ul>
+                <li>Bağlama Dersleri</li>
+                <li>Gitar Dersleri</li>
+              </ul>
+            </div>
+          </div>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Offcanvas with backdrop</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>Bağlama Dersleri Başlamıştır</p>
+            </div>
+          </div>
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>Merhaba Turkiye.</p>
+            </div>
+          </div>
+         </div>
+        <div class=" container_ana">
+             
+      <div class="container-fluid container__fluid">
+        
+        <div class="owl-carousel owl-theme">
+            
+            <div class="item"><img src="{% static 'img/o-2.jpg'%}" alt=""></div>
+            <div class="item"><img src="{% static 'img/o-3.jpg'%}" alt=""></div>
+            <div class="item"><img src="{% static 'img/o-4.jpg'%}" alt=""></div>
+            <div class="item"><img src="{% static 'img/o-5.jpg'%}" alt=""></div>
+             <div class="item"><img src="{% static 'img/o-7.jpg'%}" alt=""></div>
+             <div class="item"><img src="{% static 'img/o-8.jpg'%}" alt=""></div>
+             
+             
+            
+            
+        </div>
+      </div>
+    </div>
+    </section>
+   
+    
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Esenyalı Muzik Evi</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Müzik, insanın doğasını düzenleyerek onu evrenle uyumlu bir hale getiren, yarattığı etkiyle tüm toplumları etkisi altına alan, bireylerin özgürleşmesini sağlayan temel sanat dalıdır.
+          Müzik ile kendini keşfetmeye hazırmısın ? 
+        </div>
+        <div class="dropdown mt-3 ">
+          <button class="button-71 dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+           Muzik Dersleri
+          </button>
+          <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item button-30" href="#">Bağlama Dersi</a></li>
+            <li><a class="dropdown-item button-30" href="#">Gitar Dersi</a></li>
+            <li><a class="dropdown-item button-30" href="#">Keman Dersi</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+
+    <section class="urunler">
+      
+     <div class="urunler_kapsayıcı" >
+       {% for urun in urunler%}
+      <div class="wrapper1">
+        <div class="container1">
+          <div class="top1" style="background: url('{{urun.resim.url}}'); background-position: center; background-size: cover; height: 50%; margin-top: 5rem; margin-bottom: 5rem; ">
+            
+          </div>
+          
+          <div class="bottom">
+            <div class="left">
+              <div class="details">
+                <p> <a  href = "{% url 'urun_detay' urun.category.slug urun.id %}" class = "item-name">{{ urun.urun_adı }}</a></p>
+                <p>{{urun.fiyat}}TL</p>
+              </div>
+              <div class="buy"><i class="material-icons">done</i></div>
+            </div>
+            <div class="right">
+              <div class="done"><i class="material-icons">done</i></div>
+              <div class="details">
+                <h1>Chair</h1>
+                <p>Added to your cart</p>
+              </div>
+              <div class="remove"><i class="material-icons">clear</i></div>
+            </div>
+          </div>
+        </div>
+        <div class="inside" style="background: center center url('{% static "img/nota.jpg"%}');">
+          <div class="icon"><i class="material-icons">info_outline</i></div>
+          <div class="contents1">
+            <table>
+              <tr>
+                <th>Width</th>
+                <th>Height</th>
+              </tr>
+              <tr>
+                <td>3000mm</td>
+                <td>4000mm</td>
+              </tr>
+              <tr>
+                <th>Something</th>
+                <th>Something</th>
+              </tr>
+              <tr>
+                <td>200mm</td>
+                <td>200mm</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+       {% endfor %}
+     </div>
+    
+     </div>
+    
+      
+      
+    </section>
+       
+    <section class="option__section">
+      {% for iframe in iframes %}
+      <div class="options">
+       
+        <div class="option active" >
+          
+          
+          <iframe width="100%" height="100%" src="{{iframe.iframe}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <div class="label">
+           
+            
+           </div>
+        </div>
+        {% endfor %}
+     </div>
+  
+    </section>
+   
+
+    <section class="blog" id="blog">
+      <div class="container_1">
+        <div class="title">
+          <h5>BLOG</h5>
+          <h1>Guncel Haberler</h1>
+        </div>
+        <div class="column-card">
+          {% for post in posts %}
+          <div class="card_blog">
+           
+            <img class="card__img" src="{{post.resim.url}}"/>
+          
+            
+            <div class="panel">
+              <span class="date">{{post.tarih}}</span>
+              <p>
+                {{post.aciklama | truncatechars:100}} <a href="{% url 'blog_detay' post.category.slug post.id %}">Devamı</a>
+              </p>
+              <span class="breaker"></span>
+              <p >
+               <a class="img_baslik"  href="{% url 'blog_detay' post.category.slug post.id %}">{{post.isim}}</a> 
+              </p>
+              <a  href="#!">Know <i class="fa fa-long-arrow-right"></i></a>
+            </div>
+          </div>
+           {% endfor %}
+        </div>
+        <a href="{% url 'blog' %}" class="allbtn">Hepsini Gör</a>
+      </div>
+    </section>
+    
+    <a href="#" class="yukarikaydir"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+      <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+    </svg></a>
+   <section class="footer">
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social_icon">
+        <li><a href="https://www.youtube.com/channel/UCeDigbsc3laTGZ3VpP7Njhw"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+          <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+        </svg></a></li>
+        <li><a href="https://m.facebook.com/pages/category/Education/Esenyal%C4%B1-M%C3%BCzik-Merkezi-615052028578942/?locale2=tr_TR"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+        </svg></a></li>
+        <li><a href="https://instagram.com/esenyalimuzikmerkezi?utm_medium=copy_link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+        </svg></a></li>
+      </ul>
+      <ul class="menu">
+        <li><a href="">Anasayfa</a></li>
+        <li><a href="">Hakkımızda</a></li>
+        <li><a href="">Atöyle</a></li>
+        <li><a href="">İletişim</a></li>
+      </ul>
+      <p class="footer_text">Ahmet yesevi Mah Hürriyet Cad Esenyalı müzik evi</p>
+    </footer>
+   </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+      <script src="{% static 'js/app.js'%}"></script>
+      
+      <script src="{% static 'vendor/jquery/jquery.min.js'%}"></script>
+      <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="{% static 'OwlCarousel/dist/owl.carousel.min.js'%}"></script>
+      <script src="{% static 'js/bootstrap.bundle.min.js'%}"></script> 
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+     <script>
+      const loader = document.getElementById("bg_load");
+       window.addEventListener("load",function(){
+      loader.style.display="none";
+      })
+     </script>
+  
+  
+</body>
+</html>
